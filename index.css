@@ -1,0 +1,61 @@
+/* 清除浮动 */
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 主体用于继承 */
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Arial Black';
+}
+
+/* 顶部导航条 */
+.topNacBar {
+  padding: 20px 16px;
+}
+
+/* logo */
+.topNacBar > a {
+  display: block;
+  float: left;
+  font-size: 24px;
+}
+.topNacBar > a > .rs {
+  color: #e6686a;
+}
+.topNacBar > a > .card {
+  margin-left: 4px;
+  color: #9a9da2;
+}
+
+/* nav */
+.topNacBar > ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.topNacBar > ul > li {
+  float: left;
+  list-style: none;
+  color: #b7b7b7;
+  margin: 0 17px;
+}
+.topNacBar > ul > li > a {
+  display: block;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+.topNacBar > ul > li > a:hover {
+  border-bottom: 3px solid #e06576;
+}
