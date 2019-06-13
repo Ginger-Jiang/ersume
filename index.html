@@ -5,22 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="//at.alicdn.com/t/font_1240615_y752z3kx90h.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
     <title>Ginge的简历</title>
   </head>
   <body>
-    <div class="topNacBar clearFix">
-      <a href="#" class="logo"
-        ><span class="rs">RS</span><span class="card">card</span></a
-      >
-      <ul class="clearFix">
-        <li><a href="#">关于</a></li>
-        <li><a href="#">技能</a></li>
-        <li><a href="#">作品</a></li>
-        <li><a href="#">博客</a></li>
-        <li><a href="#">日历</a></li>
-        <li><a href="#">联系方式</a></li>
-        <li><a href="#">其他</a></li>
-      </ul>
+    <div class="topNavBar">
+      <div class="topNavBarContent clearFix">
+        <a href="#" class="logo"
+          ><span class="rs">RS</span><span class="card">card</span></a
+        >
+        <ul class="clearFix">
+          <li><a href="#">关于</a></li>
+          <li><a href="#">技能</a></li>
+          <li><a href="#">作品</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">日历</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+    <main>
+      <div class="userInfo">
+        <div class="pictureAndText clearFix">
+          <div class="picture">
+            <img src="./image/pictuer.jpg" alt="" />
+          </div>
+          <div class="text">
+            <span class="hi">Hi</span>
+            <h1>Ginger</h1>
+            <p>前端开发工程师</p>
+            <hr />
+            <dl>
+              <dt>年龄</dt>
+              <dd>24</dd>
+              <dt>所在城市</dt>
+              <dd>长沙</dd>
+              <dt>邮箱</dt>
+              <dd>ziqingnanyi@gmail.com</dd>
+              <dt>手机</dt>
+              <dd>18774891924</dd>
+            </dl>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weixin"></use>
+            </svg>
+          </a>
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-qq"></use>
+            </svg>
+          </a>
+        </footer>
+      </div>
+    </main>
   </body>
 </html>
