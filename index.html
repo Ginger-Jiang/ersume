@@ -78,6 +78,90 @@
           </a>
         </footer>
       </div>
+      <div class="downloadResume-wrapper">
+        <a
+          href="./static/JavaScript设计模式 张容铭.pdf"
+          class="download"
+          download
+          >下载 PDF 简历</a
+        >
+        <p class="selfIntroduction">
+          Ginger 前端开发工程师
+          <br />
+          HTML、CSS、JavaScript、Jquery、Vue.js、React.js、Node.js
+        </p>
+      </div>
     </main>
+    <section class="skill">
+      <h2>技能</h2>
+      <ol class="clearFix">
+        <li>
+          <h3>HTML && CSS</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Jquery</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue.js</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React.js</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Node.js</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 50%"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="portfolio">
+      <h2>作品集</h2>
+
+      <nav>
+        <ol>
+          <li id="all">所有</li>
+          <li id="aboriginal">原生</li>
+          <li id="frame">框架</li>
+        </ol>
+        <div id="portfolioBar" class="bar state-1">
+          <div class="bar-inner"></div>
+        </div>
+      </nav>
+      <script>
+        all.onclick = function() {
+          portfolioBar.className = 'bar state-1'
+        }
+        aboriginal.onclick = function() {
+          portfolioBar.className = 'bar state-2'
+        }
+        frame.onclick = function() {
+          portfolioBar.className = 'bar state-3'
+        }
+      </script>
+      <div class="works">
+        <div class="big"><img src="./static/big.jpg" alt="" /></div>
+        <div class="small" style="top: 0; right:0"><img src="./static/small01.jpg" alt="" /></div>
+        <div class="small" style="top: 312px; right:0"><img src="./static/small02.jpg" alt="" /></div>
+      </div>
+    </section>
   </body>
 </html>

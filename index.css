@@ -7,8 +7,7 @@
 
 /* 主体用于继承 */
 body {
-  background-color: #000;
-  /* color: #fff; */
+  background-color: #efefef;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +19,11 @@ a {
 * {
   margin: 0;
   padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 /* 顶部导航条 */
@@ -39,6 +43,8 @@ a {
   display: block;
   float: left;
   font-size: 24px;
+  margin: 3px 0 4px;
+  font-family: 'Arial Black';
 }
 .topNavBar .logo > .rs {
   color: #e6686a;
@@ -53,6 +59,7 @@ a {
   float: right;
   margin: 0;
   padding: 0;
+  margin-top: 7px;
 }
 .topNavBar ul > li {
   float: left;
@@ -86,6 +93,9 @@ a {
 }
 
 /* main */
+main {
+  margin-top: -340px;
+}
 main .userInfo {
   max-width: 940px;
   background-color: #fff;
@@ -152,13 +162,12 @@ main .userInfo .pictureAndText .text {
   color: #9da0a7;
 }
 
-
-.userInfo .media{
+.userInfo .media {
   text-align: center;
-  background-color: #E6686A;
+  background-color: #e6686a;
 }
 
-.userInfo .media a{
+.userInfo .media a {
   display: inline-block;
   width: 40px;
   line-height: 30px;
@@ -166,9 +175,169 @@ main .userInfo .pictureAndText .text {
   border-radius: 50%;
   margin: 16px;
 }
-.userInfo .media a svg{
+.userInfo .media a:hover {
+  background-color: #cf5d5f;
+}
+.userInfo .media a svg {
   width: 30px;
   height: 30px;
   fill: white;
   vertical-align: top;
+}
+main > .downloadResume-wrapper {
+  text-align: center;
+}
+main > .downloadResume-wrapper > a {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 21px 55px;
+  border: 1px solid #cdcfd1;
+  background: #efefef;
+  display: inline-block;
+  border-radius: 2px;
+  color: #3d4451;
+  font-weight: bold;
+  margin: 32px 0;
+  transition: box-shadow 0.2s;
+}
+main > .downloadResume-wrapper > a:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .selfIntroduction {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: kai;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.skill,
+.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.skill h2,
+.portfolio h2 {
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.skill ol {
+  background: white;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 42px 50px 10px;
+  margin-top: 30px;
+}
+
+.skill ol li {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+.skill ol li:nth-child(even) {
+  float: right;
+}
+.skill ol li h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+.skill ol li .progressBar {
+  height: 5px;
+  background: #fae1e1;
+  border-radius: 2px;
+  margin: 4px 0 40px;
+}
+.skill ol li .progressBar > .progress {
+  height: 100%;
+  background: #e6686a;
+  width: 70%;
+  border-radius: 2px;
+}
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.portfolio nav {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 32px;
+}
+
+.portfolio nav ol {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+.portfolio nav ol li {
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.portfolio nav ol li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .bar {
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  margin-bottom: 28px;
+  border-radius: 2px;
+}
+.portfolio .bar-inner {
+  height: 100%;
+  background: #e6686a;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.portfolio .bar .bar-inner {
+  margin-left: 0;
+  width: 50px;
+}
+
+.portfolio nav .bar.state-1 .bar-inner {
+  margin-left: 0;
+  width: 25px;
+}
+
+.portfolio nav .bar.state-2 .bar-inner {
+  margin-left: 70px;
+  width: 30px;
+}
+
+.portfolio nav .bar.state-3 .bar-inner {
+  margin-left: 145px;
+  width: 30px;
+}
+
+.works {
+  height: 597px;
+  position: relative;
+}
+.works > div {
+  transition: box-shadow 0.2s;
+}
+.works > div:hover {
+  box-shadow: 0px 6px 8px 6px rgba(0, 0, 0, 0.3);
+}
+.big {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.small {
+  position: absolute;
+  right: 0;
 }
