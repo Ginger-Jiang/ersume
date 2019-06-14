@@ -24,9 +24,9 @@
           ><span class="rs">RS</span><span class="card">card</span></a
         >
         <ul class="clearFix">
-          <li><a href="#">关于</a></li>
-          <li><a href="#">技能</a></li>
-          <li><a href="#">作品</a></li>
+          <li><a href="#about-me">关于</a></li>
+          <li><a href="#skill">技能</a></li>
+          <li><a href="#portfolio">作品</a></li>
           <li><a href="#">博客</a></li>
           <li><a href="#">日历</a></li>
           <li><a href="#">联系方式</a></li>
@@ -39,7 +39,7 @@
     </div>
     <main>
       <div class="userInfo">
-        <div class="pictureAndText clearFix">
+        <div class="pictureAndText clearFix" id="about-me">
           <div class="picture">
             <img src="./image/pictuer.jpg" alt="" />
           </div>
@@ -79,12 +79,7 @@
         </footer>
       </div>
       <div class="downloadResume-wrapper">
-        <a
-          href="./static/PDF.pdf"
-          class="download"
-          download
-          >下载 PDF 简历</a
-        >
+        <a href="./static/PDF.pdf" class="download" download>下载 PDF 简历</a>
         <p class="selfIntroduction">
           Ginger 前端开发工程师
           <br />
@@ -92,7 +87,7 @@
         </p>
       </div>
     </main>
-    <section class="skill">
+    <section class="skill" id="skill">
       <h2>技能</h2>
       <ol class="clearFix">
         <li>
@@ -133,7 +128,7 @@
         </li>
       </ol>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2>作品集</h2>
 
       <nav>
@@ -159,8 +154,12 @@
       </script>
       <div class="works">
         <div class="big"><img src="./static/big.jpg" alt="" /></div>
-        <div class="small" style="top: 0; right:0"><img src="./static/small01.jpg" alt="" /></div>
-        <div class="small" style="top: 312px; right:0"><img src="./static/small02.jpg" alt="" /></div>
+        <div class="small" style="top: 0; right:0">
+          <img src="./static/small01.jpg" alt="" />
+        </div>
+        <div class="small" style="top: 312px; right:0">
+          <img src="./static/small02.jpg" alt="" />
+        </div>
       </div>
     </section>
   </body>
