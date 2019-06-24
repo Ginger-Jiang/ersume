@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="//at.alicdn.com/t/font_1240615_y752z3kx90h.js"></script>
     <style type="text/css">
       .icon {
@@ -14,10 +14,63 @@
         fill: currentColor;
         overflow: hidden;
       }
+      .loding-box {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        background: #ccc;
+      }
+      .loding-box.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loding {
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+      .loding::before,
+      .loding::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        animation: loding 1.5s linear infinite;
+      }
+      .loding::after {
+        animation: loding 0.75s linear infinite;
+      }
+
+      @keyframes loding {
+        0% {
+          width: 0px;
+          height: 0px;
+          opacity: 1;
+        }
+        100% {
+          width: 100px;
+          height: 100px;
+          opacity: 0;
+        }
+      }
     </style>
     <title>Ginge的简历</title>
   </head>
   <body>
+    <div id="loding" class="loding-box active">
+      <div class="loding"></div>
+    </div>
     <div class="topNavBar">
       <div class="topNavBarContent clearFix">
         <a href="#" class="logo"
@@ -162,5 +215,9 @@
         </div>
       </div>
     </section>
+    <script>
+      loding.classList.remove('active')
+    </script>
+    <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>
