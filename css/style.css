@@ -82,7 +82,7 @@ li {
 /* banner */
 .banner {
   height: 520px;
-  background: url('./image/Code02.png');
+  background: url('../image/Code02.png');
   background-size: cover;
   background-position: center center;
 }
