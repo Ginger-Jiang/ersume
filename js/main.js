@@ -4,7 +4,7 @@ setTimeout(() => {
   loding.classList.remove('active')
 }, 1000);
 
-
+// topNavBar
 window.onscroll = function (e) {
   let element = document.getElementById('topNavBar')
   let scrollY = window.scrollY
@@ -12,5 +12,16 @@ window.onscroll = function (e) {
     element.classList.add('sticky')
   } else {
     element.classList.remove('sticky')
+  }
+}
+
+// submenu
+let aTags = document.querySelectorAll('nav > ul > li')
+for (let i = 0; i < aTags.length; i++) {
+  aTags[i].onmouseenter = function (e) {
+    e.currentTarget.classList.add('active')
+  }
+  aTags[i].onmouseleave = function (e) {
+    e.currentTarget.classList.remove('active')
   }
 }
