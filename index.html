@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,59 +13,7 @@
         vertical-align: -0.15em;
         fill: currentColor;
         overflow: hidden;
-      }
-      .loding-box {
-        display: none;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        background: #ccc;
-      }
-      .loding-box.active {
-        display: flex;
-      }
-
-      .loding {
-        width: 200px;
-        height: 200px;
-        position: relative;
-      }
-      .loding::before,
-      .loding::after {
-        content: '';
-        width: 0px;
-        height: 0px;
-        background: black;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        animation: loding 1.5s linear infinite;
-      }
-      .loding::after {
-        animation: loding 0.75s linear infinite;
-      }
-
-      @keyframes loding {
-        0% {
-          width: 0px;
-          height: 0px;
-          opacity: 1;
-        }
-        100% {
-          width: 100px;
-          height: 100px;
-          opacity: 0;
-        }
-      }
+      }  
     </style>
     <title>Ginge的简历</title>
   </head>
@@ -73,7 +21,7 @@
     <div id="loding" class="loding-box active">
       <div class="loding"></div>
     </div>
-    <div class="topNavBar">
+    <div id="topNavBar" class="topNavBar">
       <div class="topNavBarContent clearFix">
         <a href="#" class="logo"
           ><span class="rs">RS</span><span class="card">card</span></a
@@ -217,12 +165,6 @@
         </div>
       </div>
     </section>
-    <script>
-      setTimeout(() => {
-        loding.classList.remove('active')
-        console.log('loding over')
-      }, 2000)
-    </script>
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
